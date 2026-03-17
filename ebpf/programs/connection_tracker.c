@@ -11,11 +11,12 @@
 #include <linux/ns_common.h>
 
 struct conn_metadata {
-    u64 start_ts;           
-    u32 container_id;       
-    u64 cpu_time_start;     // High precision nanoseconds
-    u32 pid;                
-    char comm[16];          
+    u64 start_ts;            
+    u32 container_id;        
+    u64 cpu_time_start;      
+    u32 pid;                 
+    char comm[16];           
+    u64 last_alert_ts;      // Throttling: prevents spamming alerts on every syscall
 };
 
 struct alert_event {
@@ -34,7 +35,7 @@ BPF_PERF_OUTPUT(events);
 static inline u64 get_cpu_time() {
     struct task_struct *task = (struct task_struct *)bpf_get_current_task();
     u64 runtime = 0;
-    // sum_exec_runtime is the total time the task has been running on a CPU in ns
+    // Safe read of the scheduler entity's total runtime
     bpf_probe_read_kernel(&runtime, sizeof(runtime), &task->se.sum_exec_runtime);
     return runtime;
 }
@@ -51,7 +52,8 @@ static inline u32 get_container_id() {
     if (!pid_ns) return 0;
     if (bpf_probe_read_kernel(&inum, sizeof(inum), &pid_ns->ns.inum)) return 0;
 
-    // 4026531836 is common for Ubuntu root. If your container is different, it passes.
+    // Filter host namespace (Example: 4026531836). 
+    // In production, pass this value from Python as a MACRO.
     if (inum == 4026531836) return 0;
 
     return inum;
@@ -67,6 +69,7 @@ TRACEPOINT_PROBE(syscalls, sys_enter_accept4) {
     meta.container_id = container_id;
     meta.cpu_time_start = get_cpu_time(); 
     meta.pid = pid;
+    meta.last_alert_ts = 0;
     bpf_get_current_comm(&meta.comm, sizeof(meta.comm));
     
     connection_map.update(&pid, &meta);
@@ -78,20 +81,29 @@ TRACEPOINT_PROBE(raw_syscalls, sys_enter) {
     struct conn_metadata *meta = connection_map.lookup(&pid);
     if (!meta) return 0;
     
+    u64 now_ns = bpf_ktime_get_ns();
     u64 now_cpu = get_cpu_time();
     u64 cpu_used_us = (now_cpu - meta->cpu_time_start) / 1000;
-    u64 *threshold_ms = threshold_map.lookup(&(u32){0});
+    
+    // Map Key 0 is the global threshold set from userspace
+    u32 key = 0;
+    u64 *threshold_ms = threshold_map.lookup(&key);
 
-    // Alert if CPU usage in microseconds exceeds threshold (converted to us)
     if (threshold_ms && cpu_used_us > (*threshold_ms * 1000)) {
-        struct alert_event event = {};
-        event.pid = pid;
-        event.container_id = meta->container_id;
-        event.duration_us = (bpf_ktime_get_ns() - meta->start_ts) / 1000;
-        event.cpu_time_us = cpu_used_us;
-        event.timestamp = bpf_ktime_get_ns();
-        __builtin_memcpy(&event.comm, &meta->comm, sizeof(event.comm));
-        events.perf_submit(args, &event, sizeof(event));
+        // Only submit an event if 500ms has passed since the last one
+        // This prevents the perf buffer from being overwhelmed
+        if (now_ns - meta->last_alert_ts > 500000000) {
+            struct alert_event event = {};
+            event.pid = pid;
+            event.container_id = meta->container_id;
+            event.duration_us = (now_ns - meta->start_ts) / 1000;
+            event.cpu_time_us = cpu_used_us;
+            event.timestamp = now_ns;
+            __builtin_memcpy(&event.comm, &meta->comm, sizeof(event.comm));
+            
+            events.perf_submit(args, &event, sizeof(event));
+            meta->last_alert_ts = now_ns;
+        }
     }
     return 0;
 }
@@ -101,7 +113,6 @@ TRACEPOINT_PROBE(syscalls, sys_enter_close) {
     struct conn_metadata *meta = connection_map.lookup(&pid);
     if (!meta) return 0;
     
-    // Send one final status event on close
     struct alert_event event = {};
     event.pid = pid;
     event.container_id = meta->container_id;
