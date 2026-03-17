@@ -1,0 +1,116 @@
+#undef __HAVE_BUILTIN_BSWAP16__
+#undef __HAVE_BUILTIN_BSWAP32__
+#undef __HAVE_BUILTIN_BSWAP64__
+
+#include <uapi/linux/ptrace.h>
+#include <net/sock.h>
+#include <bcc/proto.h>
+#include <linux/sched.h>
+#include <linux/nsproxy.h>
+#include <linux/pid_namespace.h>
+#include <linux/ns_common.h>
+
+struct conn_metadata {
+    u64 start_ts;           
+    u32 container_id;       
+    u64 cpu_time_start;     // High precision nanoseconds
+    u32 pid;                
+    char comm[16];          
+};
+
+struct alert_event {
+    u32 pid;
+    u32 container_id;
+    u64 duration_us;
+    u64 cpu_time_us;
+    char comm[16];
+    u64 timestamp; 
+};
+
+BPF_HASH(connection_map, u32, struct conn_metadata);
+BPF_HASH(threshold_map, u32, u64);
+BPF_PERF_OUTPUT(events); 
+
+static inline u64 get_cpu_time() {
+    struct task_struct *task = (struct task_struct *)bpf_get_current_task();
+    u64 runtime = 0;
+    // sum_exec_runtime is the total time the task has been running on a CPU in ns
+    bpf_probe_read_kernel(&runtime, sizeof(runtime), &task->se.sum_exec_runtime);
+    return runtime;
+}
+
+static inline u32 get_container_id() {
+    struct task_struct *task = (struct task_struct *)bpf_get_current_task();
+    struct nsproxy *ns;
+    struct pid_namespace *pid_ns;
+    u32 inum = 0;
+
+    if (bpf_probe_read_kernel(&ns, sizeof(ns), &task->nsproxy)) return 0;
+    if (!ns) return 0;
+    if (bpf_probe_read_kernel(&pid_ns, sizeof(pid_ns), &ns->pid_ns_for_children)) return 0;
+    if (!pid_ns) return 0;
+    if (bpf_probe_read_kernel(&inum, sizeof(inum), &pid_ns->ns.inum)) return 0;
+
+    // 4026531836 is common for Ubuntu root. If your container is different, it passes.
+    if (inum == 4026531836) return 0;
+
+    return inum;
+}
+
+TRACEPOINT_PROBE(syscalls, sys_enter_accept4) {
+    u32 pid = bpf_get_current_pid_tgid() >> 32;
+    u32 container_id = get_container_id();
+    if (container_id == 0) return 0; 
+    
+    struct conn_metadata meta = {};
+    meta.start_ts = bpf_ktime_get_ns();
+    meta.container_id = container_id;
+    meta.cpu_time_start = get_cpu_time(); 
+    meta.pid = pid;
+    bpf_get_current_comm(&meta.comm, sizeof(meta.comm));
+    
+    connection_map.update(&pid, &meta);
+    return 0;
+}
+
+TRACEPOINT_PROBE(raw_syscalls, sys_enter) {
+    u32 pid = bpf_get_current_pid_tgid() >> 32;
+    struct conn_metadata *meta = connection_map.lookup(&pid);
+    if (!meta) return 0;
+    
+    u64 now_cpu = get_cpu_time();
+    u64 cpu_used_us = (now_cpu - meta->cpu_time_start) / 1000;
+    u64 *threshold_ms = threshold_map.lookup(&(u32){0});
+
+    // Alert if CPU usage in microseconds exceeds threshold (converted to us)
+    if (threshold_ms && cpu_used_us > (*threshold_ms * 1000)) {
+        struct alert_event event = {};
+        event.pid = pid;
+        event.container_id = meta->container_id;
+        event.duration_us = (bpf_ktime_get_ns() - meta->start_ts) / 1000;
+        event.cpu_time_us = cpu_used_us;
+        event.timestamp = bpf_ktime_get_ns();
+        __builtin_memcpy(&event.comm, &meta->comm, sizeof(event.comm));
+        events.perf_submit(args, &event, sizeof(event));
+    }
+    return 0;
+}
+
+TRACEPOINT_PROBE(syscalls, sys_enter_close) {
+    u32 pid = bpf_get_current_pid_tgid() >> 32;
+    struct conn_metadata *meta = connection_map.lookup(&pid);
+    if (!meta) return 0;
+    
+    // Send one final status event on close
+    struct alert_event event = {};
+    event.pid = pid;
+    event.container_id = meta->container_id;
+    event.duration_us = (bpf_ktime_get_ns() - meta->start_ts) / 1000;
+    event.cpu_time_us = (get_cpu_time() - meta->cpu_time_start) / 1000;
+    event.timestamp = bpf_ktime_get_ns();
+    __builtin_memcpy(&event.comm, &meta->comm, sizeof(event.comm));
+    
+    events.perf_submit(args, &event, sizeof(event));
+    connection_map.delete(&pid);
+    return 0;
+}

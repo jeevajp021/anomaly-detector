@@ -1,0 +1,20 @@
+#eBPF Python bindings
+bcc
+pyebpf
+
+#Machine Learning
+scikit-learn==1.3.0
+numpy==1.24.3
+pandas==2.0.3
+joblib==1.3.1
+
+#Data Processing
+scipy==1.11.1
+
+#Monitor & Logging
+prometheus-client==0.17.1
+python-json-logger==2.0.7
+
+#Testing
+pytest==7.4.0
+pytest-cov==4.1.0

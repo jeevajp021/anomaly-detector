@@ -1,0 +1,1865 @@
+[
+  {
+    "timestamp": "2026-03-09T14:02:21.966940",
+    "pid": 1,
+    "container_id": 4026531836,
+    "command": "systemd",
+    "duration_ms": 0,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:02:21.967133",
+    "pid": 195,
+    "container_id": 4026531836,
+    "command": "systemd-journal",
+    "duration_ms": 0,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:02:22.209873",
+    "pid": 550,
+    "container_id": 4026531836,
+    "command": "dbus-daemon",
+    "duration_ms": 4,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:02:22.330311",
+    "pid": 550,
+    "container_id": 4026531836,
+    "command": "dbus-daemon",
+    "duration_ms": 4,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:03:01.108224",
+    "pid": 1,
+    "container_id": 4026531836,
+    "command": "systemd",
+    "duration_ms": 0,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:03:01.121743",
+    "pid": 1,
+    "container_id": 4026531836,
+    "command": "systemd",
+    "duration_ms": 2,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:01.205561",
+    "pid": 1,
+    "container_id": 4026531836,
+    "command": "systemd",
+    "duration_ms": 3,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:01.205963",
+    "pid": 1,
+    "container_id": 4026531836,
+    "command": "systemd",
+    "duration_ms": 0,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:11.996413",
+    "pid": 550,
+    "container_id": 4026531836,
+    "command": "dbus-daemon",
+    "duration_ms": 1,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:12.162367",
+    "pid": 1,
+    "container_id": 4026531836,
+    "command": "systemd",
+    "duration_ms": 0,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.737305",
+    "pid": 1537,
+    "container_id": 4026531836,
+    "command": "dbus-daemon",
+    "duration_ms": 1,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.754322",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 22,
+    "cpu_time_ms": 18446743777729,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.757066",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 22,
+    "cpu_time_ms": 18446743777729,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.757173",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 23,
+    "cpu_time_ms": 18446743777729,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.757189",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 24,
+    "cpu_time_ms": 18446743777729,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.757198",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 32,
+    "cpu_time_ms": 18446743777729,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.761175",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 35,
+    "cpu_time_ms": 18446743777733,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.762113",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 35,
+    "cpu_time_ms": 18446743777733,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.762571",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 35,
+    "cpu_time_ms": 18446743777733,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.763135",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 36,
+    "cpu_time_ms": 18446743777733,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.763974",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 37,
+    "cpu_time_ms": 18446743777733,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.767128",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 44,
+    "cpu_time_ms": 18446743777737,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.773068",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 47,
+    "cpu_time_ms": 18446743777737,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.773191",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 47,
+    "cpu_time_ms": 18446743777737,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.773208",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 48,
+    "cpu_time_ms": 18446743777737,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.779010",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 49,
+    "cpu_time_ms": 18446743777737,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.780946",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 49,
+    "cpu_time_ms": 18446743777737,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.781151",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 49,
+    "cpu_time_ms": 18446743777737,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.922383",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 196,
+    "cpu_time_ms": 18446743777741,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.922653",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 196,
+    "cpu_time_ms": 18446743777741,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.922783",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 197,
+    "cpu_time_ms": 18446743777741,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.922805",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 197,
+    "cpu_time_ms": 18446743777741,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.922819",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 197,
+    "cpu_time_ms": 18446743777741,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.922832",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 198,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.922845",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 198,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.922858",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 198,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.923229",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 198,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.923254",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 199,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.923357",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 199,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.932772",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 204,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.932959",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 204,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.933919",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 206,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.933952",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 206,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.933974",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 207,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:23.933987",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 207,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.266395",
+    "pid": 1537,
+    "container_id": 4026531836,
+    "command": "dbus-daemon",
+    "duration_ms": 0,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.269822",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 545,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.270011",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 545,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.270035",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 545,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.270047",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 545,
+    "cpu_time_ms": 18446743777745,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.270059",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 546,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.270070",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 546,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.270080",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 546,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.270094",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 547,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.270105",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 547,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.270522",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 548,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.271007",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 548,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.271977",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 549,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.272008",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 549,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.272019",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 549,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.272090",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 549,
+    "cpu_time_ms": 18446743777749,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:24.294331",
+    "pid": 1684,
+    "container_id": 4026531836,
+    "command": "dbus-daemon",
+    "duration_ms": 3,
+    "cpu_time_ms": 4,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.286893",
+    "pid": 1537,
+    "container_id": 4026531836,
+    "command": "dbus-daemon",
+    "duration_ms": 2,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.291496",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1566,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.292400",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1566,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.292468",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1566,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.292557",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1567,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.292583",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1567,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.292596",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1567,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.292609",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1567,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.292647",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1567,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.292659",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1568,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.292673",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1568,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.293384",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1568,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.293414",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1568,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.293423",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1568,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.293461",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1568,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.293882",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1569,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.313343",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1584,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.313543",
+    "pid": 550,
+    "container_id": 4026531836,
+    "command": "dbus-daemon",
+    "duration_ms": 2,
+    "cpu_time_ms": 4,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.316441",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1592,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.316587",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1592,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.316613",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1592,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.316639",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1593,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.316808",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1593,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.316831",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1593,
+    "cpu_time_ms": 18446743777753,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.316845",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1594,
+    "cpu_time_ms": 18446743777757,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.316943",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1594,
+    "cpu_time_ms": 18446743777757,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.317288",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1595,
+    "cpu_time_ms": 18446743777757,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.318397",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1595,
+    "cpu_time_ms": 18446743777757,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.318552",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1595,
+    "cpu_time_ms": 18446743777757,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.320126",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1596,
+    "cpu_time_ms": 18446743777757,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.320208",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1597,
+    "cpu_time_ms": 18446743777757,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.320231",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1597,
+    "cpu_time_ms": 18446743777757,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.320239",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1597,
+    "cpu_time_ms": 18446743777757,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:25.320246",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 1598,
+    "cpu_time_ms": 18446743777761,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.551392",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2827,
+    "cpu_time_ms": 18446743769013,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.554256",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2830,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.554444",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2830,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.554580",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2831,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.554694",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2831,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.554852",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2831,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.555435",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2833,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.555568",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2833,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.568355",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2845,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.568922",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2846,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.573925",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2847,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.574180",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2847,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.574321",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2847,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.574494",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2847,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.574624",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2848,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.574744",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2848,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.574860",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2848,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.574974",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2848,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.575086",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2848,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.575200",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2849,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.575325",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2849,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.575440",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2849,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.575553",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2849,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.575670",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2849,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.575832",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2850,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.576027",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2850,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.576140",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2850,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.576263",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2850,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.576372",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2850,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.576500",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2850,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.576860",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2851,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.577074",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2851,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.577283",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2851,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.577471",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2851,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.577688",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2851,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.579771",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2857,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.580333",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2858,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.581541",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2858,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.581712",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2858,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.581843",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2859,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.581989",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2859,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.582117",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2859,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.582864",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2860,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.583183",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2861,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.583504",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2861,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.585121",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2861,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.585196",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2862,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.585241",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2862,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.585284",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2862,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.585326",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2863,
+    "cpu_time_ms": 18446743769017,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.585811",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2863,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:26.586114",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 2864,
+    "cpu_time_ms": 18446743768937,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.259576",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3535,
+    "cpu_time_ms": 18446743768721,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.264211",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3536,
+    "cpu_time_ms": 18446743768721,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.264521",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3536,
+    "cpu_time_ms": 18446743768721,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.264880",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3536,
+    "cpu_time_ms": 18446743768721,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.265063",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3536,
+    "cpu_time_ms": 18446743768721,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.468475",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3746,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.469630",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3746,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.469852",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3747,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.469940",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3747,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.470293",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3748,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.490747",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3748,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.490953",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3748,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.491037",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3768,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.491108",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3768,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.491177",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3768,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.491728",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3769,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.492447",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3770,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.492797",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3770,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.493088",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3770,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.493921",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3771,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.494613",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3772,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.494709",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3772,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.495027",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3773,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.495331",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3773,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.495866",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3773,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.496341",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3774,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.496416",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3774,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.496697",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3774,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.497398",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3775,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.497472",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3775,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.497788",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3775,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.498086",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3776,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.500187",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3777,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.500554",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3778,
+    "cpu_time_ms": 18446743923001,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:27.502114",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 3778,
+    "cpu_time_ms": 18446743928033,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:31.234734",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 7511,
+    "cpu_time_ms": 18446743768721,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:31.234833",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 7512,
+    "cpu_time_ms": 18446743768721,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:31.234849",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 7512,
+    "cpu_time_ms": 18446743768721,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:31.234860",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 7512,
+    "cpu_time_ms": 18446743768721,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:31.234871",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 7512,
+    "cpu_time_ms": 18446743768721,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.917601",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10196,
+    "cpu_time_ms": 18446743777761,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.917793",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10196,
+    "cpu_time_ms": 18446743777761,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.920308",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10197,
+    "cpu_time_ms": 18446743777761,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.920540",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10197,
+    "cpu_time_ms": 18446743777761,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.920673",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10197,
+    "cpu_time_ms": 18446743777761,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.920798",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10197,
+    "cpu_time_ms": 18446743777761,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.920915",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10197,
+    "cpu_time_ms": 18446743777761,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.922178",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10200,
+    "cpu_time_ms": 18446743777765,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.925393",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10203,
+    "cpu_time_ms": 18446743777769,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.925766",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10203,
+    "cpu_time_ms": 18446743777769,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.926772",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10204,
+    "cpu_time_ms": 18446743777769,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.930192",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10205,
+    "cpu_time_ms": 18446743777769,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.933651",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10211,
+    "cpu_time_ms": 18446743777769,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.934477",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10212,
+    "cpu_time_ms": 18446743777769,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.939323",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10216,
+    "cpu_time_ms": 18446743777769,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.944941",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10220,
+    "cpu_time_ms": 18446743777769,
+    "severity": "HIGH"
+  },
+  {
+    "timestamp": "2026-03-09T14:04:33.948416",
+    "pid": 1675,
+    "container_id": 4026531836,
+    "command": "gnome-shell",
+    "duration_ms": 10224,
+    "cpu_time_ms": 28,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:05:01.239410",
+    "pid": 1,
+    "container_id": 4026531836,
+    "command": "systemd",
+    "duration_ms": 0,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  },
+  {
+    "timestamp": "2026-03-09T14:05:01.250360",
+    "pid": 1,
+    "container_id": 4026531836,
+    "command": "systemd",
+    "duration_ms": 0,
+    "cpu_time_ms": 0,
+    "severity": "MEDIUM"
+  }
+]

@@ -1,0 +1,56 @@
+# Anomaly Detector Configuration
+
+detector:
+  name: "CODAX-Enhanced"
+  version: "1.0.0"
+  
+ebpf:
+  # System calls to monitor
+  syscalls:
+    - accept4
+    - close
+    - execve
+    - open
+  
+  # Map sizes (number of entries)
+  maps:
+    connection_map_size: 65536
+    threshold_map_size: 1024
+  
+  # CPU threshold calculation
+  threshold:
+    method: "chebyshev"  # chebyshev or markov
+    k_value: 4.0         # Standard deviations
+    window_size: 10000   # Rolling window for statistics
+
+ml:
+  # ML Post-Filter Configuration
+  model:
+    type: "random_forest"
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
+  
+  # Training parameters
+  training:
+    test_size: 0.2
+    cross_validation_folds: 5
+  
+  # Feature engineering
+  features:
+    - cpu_time
+    - duration
+    - syscall_diversity
+    - temporal_pattern
+    - resource_ratio
+
+monitoring:
+  # Performance targets
+  targets:
+    adr: 0.90        # Attack Detection Rate
+    fpr: 0.02        # False Positive Rate
+    latency_ms: 100  # Detection latency
+  
+  # Logging
+  log_level: "INFO"
+  log_file: "logs/detector.log"
