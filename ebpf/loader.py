@@ -22,16 +22,16 @@ class AlertEvent(ct.Structure):
     ]
 
 class EBPFConnectionTracker:
-    def __init__(self, ebpf_program_path, use_dynamic=True):
-        self.use_dynamic = use_dynamic
+    def __init__(self, ebpf_program_path, use_dynamic_threshold=True):
+        self.use_dynamic_threshold = use_dynamic_threshold
         self.alerts = []
         self.normal_traffic = []
-        self.threshold_calc = DynamicThresholdCalculator() if use_dynamic else None
+        self.threshold_calc = DynamicThresholdCalculator() if use_dynamic_threshold else None
         
         try:
             self.bpf = BPF(src_file=ebpf_program_path)
             self.bpf["events"].open_perf_buffer(self.handle_event)
-            print(f"✅ Tracker Started (Mode: {'Dynamic' if use_dynamic else 'Static'})")
+            print(f"✅ Tracker Started (Mode: {'Dynamic' if use_dynamic_threshold else 'Static'})")
         except Exception as e:
             print(f"❌ Loader Failed: {e}")
             sys.exit(1)
@@ -87,7 +87,10 @@ class EBPFConnectionTracker:
         with open(f"data/output/alerts_{ts}.json", 'w') as f: json.dump(self.alerts, f)
         with open(f"data/training/normal_{ts}.json", 'w') as f: json.dump(self.normal_traffic, f)
         print(f"💾 Data Saved: {len(self.alerts)} alerts, {len(self.normal_traffic)} normal samples.")
-
+    def cleanup(self):
+        """Standard cleanup for the tracker"""
+        print("🧹 Cleaning up eBPF probes...")
+        # BCC handles most cleanup automatically when the object is destroyed
 if __name__ == "__main__":
     tracker = EBPFConnectionTracker("ebpf/programs/connection_tracker.c")
     tracker.start_monitoring()
