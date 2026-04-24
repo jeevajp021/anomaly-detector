@@ -1,3 +1,27 @@
+# 🔐 Virtual environment
 venv/
-.venv/
-.venv
+
+# 🧠 Python cache
+__pycache__/
+*.py[cod]
+
+
+# 📊 Data files (important!)
+data/output/
+data/training/*.json
+data/training/*.npz
+
+# 🧪 Test / cache
+.pytest_cache/
+
+# 🧾 Logs
+logs/
+*.log
+
+# ⚙️ IDE files
+.vscode/
+.idea/
+
+# 🗂️ OS junk
+.DS_Store
+Thumbs.db
